@@ -1,6 +1,9 @@
 [![Build Status](https://travis-ci.org/poanetwork/poa-parity-bridge-contracts.svg?branch=master)](https://travis-ci.org/poanetwork/poa-parity-bridge-contracts)
 
 # POA bridge smart contracts
+
+[![Coverage Status](https://coveralls.io/repos/github/BlockchainLabsNZ/poa-parity-bridge-contracts/badge.svg?branch=test-coverage)](https://coveralls.io/github/BlockchainLabsNZ/poa-parity-bridge-contracts?branch=test-coverage) [![Build Status](https://travis-ci.org/BlockchainLabsNZ/poa-parity-bridge-contracts.svg?branch=test-coverage)](https://travis-ci.org/BlockchainLabsNZ/poa-parity-bridge-contracts)
+
 The goal of these contracts is to allow users to tokenize native POA coin into ERC20 token on ethereum mainnet.
 Home Bridge is a smart contract that should be deployed in POA.network
 Foreign Bridge is a smart contract that should be deployed in Ethereum Mainnet

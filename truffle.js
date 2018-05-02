@@ -4,13 +4,13 @@ module.exports = {
       host: "localhost",
       port: 7545,
       network_id: "*",
-      gasPrice: 1000000000
+      gasPrice: 1
     },
     test: {
       host: "localhost",
       port: 7545,
       network_id: "*",
-      gasPrice: 1000000000
+      gasPrice: 1
     },
     kovan: {
       host: "localhost",
