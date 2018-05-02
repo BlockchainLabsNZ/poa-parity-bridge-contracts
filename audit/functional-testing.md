@@ -32,7 +32,7 @@ For testing purpose the following accounts were used:
  - [X] Changing MAX transaction limit [Home: 4761c5](https://sokol.poaexplorer.com/txid/search/4761c5ea1ccd5ecf0297000621421e8d1da841f8844b241a1013c5e0c0d320a4) / [Foreign: 0xe78264](https://kovan.etherscan.io/address/0xe7826480a1ac9ac907ab68b958cea9e6d4baed8c0157870cf391d3ccfaaa0e44)
  - [x] Change MIN transaction limit [Home: 40d393](https://sokol.poaexplorer.com/txid/search/40d39314ad761a271dbfe2becdae8081ea73c397fe1b7a4b316b5fda587ecc0d) / [Foreign: 0x715c8c](https://kovan.etherscan.io/tx/715c8cb9d7acb8fb463087648b2079cbb55a5763f53f83b74e58c1c40c12c85c)
  	
- - [ ] <span style="background: coral; padding: 5px 10px; color: white">Upgrade contracts in case of vulnerability</span> - how?
+ - [ ] Upgrade contracts in case of vulnerability - how?
 	- to non-contract addresses [0x0](https://kovan.etherscan.io/tx/) 
 	- to zero address [0x0](https://kovan.etherscan.io/tx/) 
 
@@ -75,7 +75,7 @@ For testing purpose the following accounts were used:
  - [x] Home -> Foreign within the limits [Home: 0x90a267](https://sokol.poaexplorer.com/txid/search/0x90a2670bf44615fcf72eac1100f06d95af24cb73099636112089c4fcddb601db) / [0x4b58c9](https://kovan.etherscan.io/tx/0x4b58c9ab4f9d721a043474e3737b56ffc5850da039e3c10f93efae95962413d9)
  - [ ] Home -> Foreign breaking the MIN limit (should be reverted) [Home: 0x0](https://sokol.poaexplorer.com/txid/search/) / [0x0](https://kovan.etherscan.io/tx/)
  - [ ] Home -> Foreign breaking the MAX limit (should be reverted) [Home: 0x0](https://sokol.poaexplorer.com/txid/search/) / [0x0](https://kovan.etherscan.io/tx/)
- - [?] Foreign -> Home within the limits [Home: 0x0](https://sokol.poaexplorer.com/txid/search/) / [Foreign: 0x07ff69](https://kovan.etherscan.io/tx/0x07ff69ce3b16ec13e5501dab74cb406c98dc8ba6921b8b98a07dd801be2049db)
+ - [x] Foreign -> Home within the limits [Home: 0x23fd9b](https://sokol.poaexplorer.com/txid/search/0x23fd9be6ebb432c09c0ca524c189a9b585657188af513f5d1176146ac9850268) / [Foreign: 0x23fd9b](https://kovan.etherscan.io/tx/0x23fd9be6ebb432c09c0ca524c189a9b585657188af513f5d1176146ac9850268)
  - [ ] Foreign -> Home breaking the MIN limits (should be reverted) [Home: 0x0](https://sokol.poaexplorer.com/txid/search/) / [0x0](https://kovan.etherscan.io/tx/)
  - [ ] Foreign -> Home breaking the MAX limits (should be reverted) [Home: 0x0](https://sokol.poaexplorer.com/txid/search/) / [0x0](https://kovan.etherscan.io/tx/)
 
