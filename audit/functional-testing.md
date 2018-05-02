@@ -13,10 +13,10 @@ For testing purpose the following accounts were used:
 
 ### Kovan
 
-- [Bridge contract](https://kovan.etherscan.io/0x7Ea07cd462eF0d5B51F85d12f232e6BbF646A016)
-- [Validator contract](https://kovan.etherscan.io/0xad3ccd040d968af2fA983413D3c8aADd9a6F1c9a)
-- [Validator 1](https://kovan.etherscan.io/0x6b1454ea62aa394c98bb63ed6ec8a491ba144a60)
-- [Validator 2](https://kovan.etherscan.io/0x8bcb705c12164ef39d6202cc38059a91603e6872)
+- [Bridge contract](https://kovan.etherscan.io/address/0x7Ea07cd462eF0d5B51F85d12f232e6BbF646A016)
+- [Validator contract](https://kovan.etherscan.io/address/0xad3ccd040d968af2fA983413D3c8aADd9a6F1c9a)
+- [Validator 1](https://kovan.etherscan.io/address/0x6b1454ea62aa394c98bb63ed6ec8a491ba144a60)
+- [Validator 2](https://kovan.etherscan.io/address/0x8bcb705c12164ef39d6202cc38059a91603e6872)
 
 
 <br>
