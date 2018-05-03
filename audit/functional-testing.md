@@ -77,7 +77,7 @@ For testing purpose the following accounts were used:
 ### Unexpected behaviour
 
  - [x] sends POA coins to Home bridge in order to receive ERC20 token on Foreign Bridge on the same address [Home: 0x5b627](https://sokol.poaexplorer.com/txid/search/0x5b627ab31d1d517bf41f2ba5ec091c88f4c30fdd742756842d7548a826460561)
-<br>*The networks have different settings; POA Coins was sent and deposited by Home Bridge contract, but no POA20 tokens were issued on Kovan network.*
+<br>*The two bridges had different settings. POA Coins were sent and deposited by HomeBridge contract(deposit was within the HomeBridge limits), but no POA20 tokens were issued on Kovan network (required withdraw was out of the limits).*
 
 
 <br>
