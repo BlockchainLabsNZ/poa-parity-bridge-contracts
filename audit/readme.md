@@ -109,7 +109,7 @@ The audit report is focused on the following key areas - though this is not an e
 - When you upgrade the implentation of contracts
   - to a previous implementation [Foreign: 0x01d4449](https://kovan.etherscan.io/tx/0x1d44494c37c5368139bb613a36edce34f0dbe0065977e32b873b9ce3256d50a4)
   - to a non-contract address [Foreign: 0x3f8fe1](https://kovan.etherscan.io/tx/0x3f8fe1ef67d6ab83db93e165b9838d882a4621a74d5465183ba79121267a307c)
-
+- If the two bridge contracts have different settings (i.e `maxPerTx`, `minPerTx`) then it is possible to send funds/tokens to a contract, have it accepted, then have the transaction fail when it transfers through the bridge. This will result in the funds/tokens being stuck in the contract.
 
 ## Conclusion
 
