@@ -5,7 +5,8 @@ Tests were conducted on the Kovan test network and PoA Sokol, but they have been
 For testing purpose the following accounts were used:
 
 ### Sokol
-- [Bridge contract](https://sokol-explorer.poa.network/account/0xad3ccd040d968af2fa983413d3c8aadd9a6f1c9a)
+- [HomeBridge Storage](https://sokol-explorer.poa.network/account/0xad3ccd040d968af2fa983413d3c8aadd9a6f1c9a)
+- [Home Bridge Implementation](https://sokol-explorer.poa.network/account/0x608707f39c8E487eafEDfB190f14392E6239eF00)
 - [Validator contract](https://sokol-explorer.poa.network/account/0x5F5fB0A1C6e1c95346Eca1771732Db1fD149525B)
 - [Validator 1](https://sokol-explorer.poa.network/account/0x6b1454ea62aa394c98bb63ed6ec8a491ba144a60)
 - [Validator 2](https://sokol-explorer.poa.network/account/0x8bcb705c12164ef39d6202cc38059a91603e6872)
@@ -13,11 +14,14 @@ For testing purpose the following accounts were used:
 
 ### Kovan
 
-- [Bridge contract](https://kovan.etherscan.io/address/0x7Ea07cd462eF0d5B51F85d12f232e6BbF646A016)
+- [Foreign Bridge Storage](https://kovan.etherscan.io/address/0x7Ea07cd462eF0d5B51F85d12f232e6BbF646A016)
+- [Foreign Bridge implementation](https://kovan.etherscan.io/address/0xE58227ae91b3631e13089e9888BBe5E23d779975)
 - [Validator contract](https://kovan.etherscan.io/address/0xad3ccd040d968af2fA983413D3c8aADd9a6F1c9a)
 - [Validator 1](https://kovan.etherscan.io/address/0x6b1454ea62aa394c98bb63ed6ec8a491ba144a60)
 - [Validator 2](https://kovan.etherscan.io/address/0x8bcb705c12164ef39d6202cc38059a91603e6872)
 
+<br>
+**N.B.** Different storages and different implementations were used. Hence, following TX hashes are related to different implementations/deployments; still, the same contracts from the same commit were used. 
 
 <br>
 
@@ -28,32 +32,22 @@ For testing purpose the following accounts were used:
 
  - [x] Add validators [Home: 0x6b0123](https://sokol.poaexplorer.com/txid/search/0x6b0123736631c34d0a0b1849284d96e79653015e6d240ea61bbcb39d7654b184) / [Foreign: 0x532290](https://kovan.etherscan.io/tx/0x532290af87e310e96bffc86cfae9530eb0d2bf9a5fdce0594ba2fea3a28bbef5)
  - [x] Remove validators [Home: 0x6b0123](https://sokol.poaexplorer.com/txid/search/0x6b0123736631c34d0a0b1849284d96e79653015e6d240ea61bbcb39d7654b184) / [Foreign: 0xaf03a9](https://kovan.etherscan.io/tx/0xaf03a93221c8f16fd398370a0889f741e979089ebcd7982f2bdf5f8179f91679)
- - [x] Set home daily limits on home bridges [0xf05674](sokol.poaexplorer.com/txid/search/0xf0567473d72489d7f3cc6f33cbd14e65985dbb14ae12d3656d1bc80754f7c176)
+ - [x] Set home daily limits on the home bridges [0xf05674](https://sokol.poaexplorer.com/txid/search/0xf0567473d72489d7f3cc6f33cbd14e65985dbb14ae12d3656d1bc80754f7c176)
+ - [x] Set foreign daily limits on the foreign bridges [0xfb3de](https://kovan.etherscan.io/tx/0xfb3de489326d4287685638b32ff9ac9c67dd091bb9f7884df765d673d8268e09)
  - [X] Changing MAX transaction limit [Home: 4761c5](https://sokol.poaexplorer.com/txid/search/4761c5ea1ccd5ecf0297000621421e8d1da841f8844b241a1013c5e0c0d320a4) / [Foreign: 0xe78264](https://kovan.etherscan.io/address/0xe7826480a1ac9ac907ab68b958cea9e6d4baed8c0157870cf391d3ccfaaa0e44)
  - [x] Change MIN transaction limit [Home: 40d393](https://sokol.poaexplorer.com/txid/search/40d39314ad761a271dbfe2becdae8081ea73c397fe1b7a4b316b5fda587ecc0d) / [Foreign: 0x715c8c](https://kovan.etherscan.io/tx/715c8cb9d7acb8fb463087648b2079cbb55a5763f53f83b74e58c1c40c12c85c)
- 	
- - [ ] Upgrade contracts in case of vulnerability - how?
-	- to non-contract addresses [0x0](https://kovan.etherscan.io/tx/) 
-	- to zero address [0x0](https://kovan.etherscan.io/tx/) 
+ - [x] Upgrade contracts in case of vulnerability [Foreign: 0x311cc7](https://kovan.etherscan.io/tx/0x311cc7d251ca8bec5f06551c3033429560444934c87adb19eb6850cd24d17483)
 
 	#### Disallowed behaviour
 
 	 - [x] Set the number of required signatures greater than a number of validators [Foreign: 0x8e264b](https://kovan.etherscan.io/tx/0x8e264b88a53ce7e6553e5ff0a29691b11cc5d2e9581edb20cf467c89457bee14) / [Home: 0x70a094](https://sokol.poaexplorer.com/txid/search/70a0941cf60557b62faccd87e23391270992a8221a79c19b027c4e11e754d621)
-	 - [x] Change home daily limits for foreign network [0xd1ddef](https://kovan.etherscan.io/tx/0xd1ddefe8b60f69cb8ec96739666776c3fbb560d625db841715b41aebe340bf80)
 	 - [x] Set MAX transaction limit to zero [Home: 0x1c71dc](https://sokol.poaexplorer.com/txid/search/1c71dc00002be0b21861d6c7756945c92308f41d268c191bd765934d5f6a325b) 
 	 - [x] Set MIN transaction limit > MAX transaction limit [Home: 0x94fc5d](https://sokol.poaexplorer.com/txid/search/94fc5d80d9e6a9d26a1ef274ea609805516f5e51f7a49fd0593ccb797c4cc163) 
- 
-	#### Disallowed behaviour, blocked by node client (hence there are no confirmations)
-
-		Error importing transaction: Transaction(InsufficientGas { minimal: 22680, got: 21000 })
-		
-		Should be tested after contracts are verified on the etherscan.
-
-	 - [x] Removing the validator without decreasing number of required signatures
-	 - [x] Add already enlisted/nonlisted validators
-	 - [x] Remove non-listed validators <br>
-	 - [x] Set MAX transaction limit greater then HOME daily limit
-	 - [x] Set MIN transaction limit > MAX transaction limit on Foreign network
+	 - [ ] Removing the validator without decreasing number of required signatures
+	 - [ ] Add already enlisted/nonlisted validators
+	 - [ ] Remove non-listed validators
+	 - [ ] Set MAX transaction limit greater then HOME daily limit
+	 - [ ] Set MIN transaction limit > MAX transaction limit on Foreign network
 
 
 ### Unexpected behaviour 
@@ -62,7 +56,10 @@ For testing purpose the following accounts were used:
  - [x] Adding validators that doesn't have any money on their accounts: [Home: 0x6b0123](https://sokol.poaexplorer.com/txid/search/0x6b0123736631c34d0a0b1849284d96e79653015e6d240ea61bbcb39d7654b184) / [Foreign: 0x532290](https://kovan.etherscan.io/tx/0x532290af87e310e96bffc86cfae9530eb0d2bf9a5fdce0594ba2fea3a28bbef5)
  - [x] Set MAX transaction limit < MIN transaction limit [Foreign: 0xe78264](https://kovan.etherscan.io/address/0xe7826480a1ac9ac907ab68b958cea9e6d4baed8c0157870cf391d3ccfaaa0e44)
  - [x] Set MAX transaction limit to zero [Foreign: 0x18bbfa](https://kovan.etherscan.io/address/18bbfad09962bffa862ee14732d1b1bc91bda0bb0c5adb16b2085ec34d39fe9b)
-	
+ - [x] Upgrade contracts in case of vulnerability
+ 	- to one of the previous implementations [Foreign: 0x0x1d4449](https://kovan.etherscan.io/tx/0x1d44494c37c5368139bb613a36edce34f0dbe0065977e32b873b9ce3256d50a4) 
+	- to non-contract addresses [Foreign: 0x0x3f8fe1](https://kovan.etherscan.io/tx/0x3f8fe1ef67d6ab83db93e165b9838d882a4621a74d5465183ba79121267a307c) 
+		
 
 <br>
 
