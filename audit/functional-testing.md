@@ -49,9 +49,9 @@ For testing purpose the following accounts were used:
  - [x] Set MAX transaction limit to zero [Home: 0x1c71dc](https://sokol.poaexplorer.com/txid/search/1c71dc00002be0b21861d6c7756945c92308f41d268c191bd765934d5f6a325b)
  - [x] Set MIN transaction limit > MAX transaction limit [Home: 0x94fc5d](https://sokol.poaexplorer.com/txid/search/94fc5d80d9e6a9d26a1ef274ea609805516f5e51f7a49fd0593ccb797c4cc163)
  - [x] Removing the validator without decreasing number of required signatures [Foreign: 0xa6ad54](https://kovan.etherscan.io/tx/0xa6ad5424a2affab8ceab500c5ca75421b5f652a2a016a906bc673561bcd7b9dc)
- - [x] Add already enlisted/nonlisted validators [Foreign: 0x3b07c5](https://kovan.etherscan.io/tx/0x3b07c5e51a6f6c2bca231f9a5887a4ad95715705b48f71a365ca090e1e2f31cd)
+ - [x] Add already enlisted/non-listed validators [Foreign: 0x3b07c5](https://kovan.etherscan.io/tx/0x3b07c5e51a6f6c2bca231f9a5887a4ad95715705b48f71a365ca090e1e2f31cd)
  - [x] Remove non-listed validators [Foreign: 0x653be4](https://kovan.etherscan.io/tx/0x653be4db726fe200c145f37511ce6c1c03115ec61164b390dc78b0b353e7b94f)
- - [x] Set MAX transaction limit greater then Daily limit [Foreign: 0x7ca9cd](https://kovan.etherscan.io/tx/0x7ca9cdbddfccd4e3c2a0943f3154337c3c6d80752c98b35d84fe794570da914c)
+ - [x] Set MAX transaction limit greater than Daily limit [Foreign: 0x7ca9cd](https://kovan.etherscan.io/tx/0x7ca9cdbddfccd4e3c2a0943f3154337c3c6d80752c98b35d84fe794570da914c)
  - [x] Set MIN transaction limit > MAX transaction limit on Foreign network [Foreign: 0x495c5f](https://kovan.etherscan.io/tx/0x495c5fcf5f31d965d1ed93ffa1ca1a774f7bc605eb950269b2c46a429a0f1178)
 
 
