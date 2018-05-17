@@ -91,6 +91,7 @@ The audit report is focused on the following key areas - though this is not an e
 ### Moderate
 
 - If the two bridge contracts have different settings (i.e `maxPerTx`, `minPerTx`) then it is possible to send funds/tokens to a contract, have it accepted, then have the transaction fail when it transfers through the bridge. This will result in the funds/tokens being stuck in the contract.
+    - [ ] Fix not required
 
 ### Major
 
@@ -103,12 +104,18 @@ The audit report is focused on the following key areas - though this is not an e
 ## Observations
 
 - It is possible to set the minimum number of required signatures from validators to zero: [Foreign: 0x116ab7](https://kovan.etherscan.io/tx/0x116ab76466e2291906793aa343de5e594e2c67c22fe9b4d4ef37e0a25bf21a5d)
+    - [x] Fixed [0c2e5e2](https://github.com/poanetwork/poa-bridge-contracts/commit/0c2e5e2d616425d624057c7380ffca0ce06cc8fd)
 - It is possible to add validators that don't have any funds in their accounts: [Home: 0x6b0123](https://sokol.poaexplorer.com/txid/search/0x6b0123736631c34d0a0b1849284d96e79653015e6d240ea61bbcb39d7654b184) / [Foreign: 0x532290](https://kovan.etherscan.io/tx/0x532290af87e310e96bffc86cfae9530eb0d2bf9a5fdce0594ba2fea3a28bbef5)
+    - [ ] Fix not required
 - You can set the MAX transaction limit to less than the MIN transaction limit [Foreign: 0xe78264](https://kovan.etherscan.io/tx/0xe7826480a1ac9ac907ab68b958cea9e6d4baed8c0157870cf391d3ccfaaa0e44)
+    - [ ] Fix not required
 - You can set the MAX transaction limit to 0. This could be useful for locking transfers, but a dedicated `lock` function would be better. [Foreign: 0x18bbfa](https://kovan.etherscan.io/tx/0x18bbfad09962bffa862ee14732d1b1bc91bda0bb0c5adb16b2085ec34d39fe9b)
+    - [ ] Fix not required
 - When you upgrade the implementation of contracts:
   - you can set it to a previous implementation [Foreign: 0x01d4449](https://kovan.etherscan.io/tx/0x1d44494c37c5368139bb613a36edce34f0dbe0065977e32b873b9ce3256d50a4)
+      - [ ] Fix not required
   - and to a non-contract address [Foreign: 0x3f8fe1](https://kovan.etherscan.io/tx/0x3f8fe1ef67d6ab83db93e165b9838d882a4621a74d5465183ba79121267a307c)
+      - [ ] Fix not required
 
 ## Conclusion
 
